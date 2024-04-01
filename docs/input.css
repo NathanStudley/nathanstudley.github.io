@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .links{
+        @apply  hover:text-gray-400 hover:cursor-pointer transition-colors duration-300
+    }
+    .pageMargin{
+        @apply my-12 md:my-24 lg:my-36
+    }
+    
+}
