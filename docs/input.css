@@ -9,5 +9,11 @@
     .pageMargin{
         @apply my-12 md:my-24 lg:my-36
     }
+    .slideIn{
+        @apply relative -left-1/4 translate-x-1/4 transition-all duration-1000 delay-500 ease-in-out
+    }
+    .undo{
+        @apply duration-0 delay-0 -left-1/4 relative
+    }
     
 }

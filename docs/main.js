@@ -3,11 +3,12 @@ const homePage = document.getElementById('home');
 const contactPage = document.getElementById('contact');
 const resumePage = document.getElementById('resume');
 const projectsPage = document.getElementById('projects');
-const menuButton = document.getElementById('menu');
+const menuButton = document.getElementById('menuButton');
+const navMenu = document.getElementById('navmenu');
 
 function goToPage(page) {
     for (let i = 0; i < pages.length; i++){
-        pages[i].style.display = 'hidden';
+        pages[i].style.display = 'none';
     }
     page.style.display = 'block';
 }
@@ -15,4 +16,9 @@ function goToPage(page) {
 const goHome = () => goToPage(homePage);
 const goResume = () => goToPage(resumePage);
 const goContact = () => goToPage(contactPage);
-const toProjects = () => goToPage(projectsPage);
+const goProjects = () => goToPage(projectsPage);
+
+menuButton.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+});
+
