@@ -2,11 +2,11 @@
 function Header() {
 
     return (
-        <header class="md:flex justify-between justify-items-center">
-            <div class="flex items-center justify-between">
-                <div class="flex gap-4 items-center">
-                    <p class="font-medium text-xl bg-gradient-to-r from-blue-600 to-red-600 dark:from-red-600 dark:bg-yellow-500 bg-clip-text text-transparent cursor-pointer" onclick="goHome()">Nathan Studley</p>
-                    <a class="links" href="https://www.linkedin.com/in/nathan-studley/" target="_blank" rel="noopener noreferrer">
+        <header className="md:flex justify-between justify-items-center">
+            <div className="flex items-center justify-between">
+                <div className="flex gap-4 items-center">
+                    <p className="font-medium text-xl bg-gradient-to-r from-blue-600 to-red-600 dark:from-red-600 dark:bg-yellow-500 bg-clip-text text-transparent cursor-pointer">Nathan Studley</p>
+                    <a className="links" href="https://www.linkedin.com/in/nathan-studley/" target="_blank" rel="noopener noreferrer">
                         <svg
                             width="30"
                             height="30"
@@ -19,7 +19,7 @@ function Header() {
                             />
                         </svg>
                     </a>
-                    <a class="links" href="https://github.com/NathanStudley" target="_blank" rel="noopener noreferrer"    >
+                    <a className="links" href="https://github.com/NathanStudley" target="_blank" rel="noopener noreferrer"    >
                         <svg
                             width="30"
                             height="30"
@@ -35,32 +35,32 @@ function Header() {
                         </svg>
                     </a>
                 </div>
-                <div class="md:hidden">
-                    <svg id="menuButton" class="w-10 cursor-pointer" data-slot="icon" fill="currentColor" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                <div className="md:hidden">
+                    <svg id="menuButton" className="w-10 cursor-pointer" data-slot="icon" fill="currentColor" strokeWidth="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
                     </svg>
                 </div>
             </div>
             
-            <nav id="navmenu" class="hidden md:flex">
-                <ul class="md:flex gap-4 font-medium text-xl text-right">
-                    <li class="links">
-                        <p onclick="goHome()">Home</p>
+            <nav id="navmenu" className="hidden md:flex">
+                <ul className="md:flex gap-4 font-medium text-xl text-right">
+                    <li className="links">
+                        <p>Home</p>
                     </li>
-                    <li class="links">
-                        <p onclick="goResume()">Resume</p>
+                    <li className="links">
+                        <p>Resume</p>
                     </li>
-                    <li class="links">
-                        <p onclick="goProjects()">Projects</p>
+                    <li className="links">
+                        <p>Projects</p>
                     </li>
-                    <li class="links">
-                        <p onclick="gocontact()">Contact</p>
+                    <li className="links">
+                        <p>Contact</p>
                     </li>
                 </ul>
 
             </nav>
         </header>
-    );
+        );
 }
 
 export default Header;
