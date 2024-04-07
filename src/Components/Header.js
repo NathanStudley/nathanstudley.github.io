@@ -1,5 +1,11 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(true);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
 
     return (
         <header className="md:flex justify-between justify-items-center">
@@ -35,26 +41,26 @@ function Header() {
                         </svg>
                     </a>
                 </div>
-                <div className="md:hidden">
+                <div className="md:hidden" onClick={toggleMenu}>
                     <svg id="menuButton" className="w-10 cursor-pointer" data-slot="icon" fill="currentColor" strokeWidth="2" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
                     </svg>
                 </div>
             </div>
             
-            <nav id="navmenu" className="hidden md:flex">
+            <nav id="navmenu" className={` ${isOpen ? "hidden" : null} md:flex`}>
                 <ul className="md:flex gap-4 font-medium text-xl text-right">
                     <li className="links">
-                        <p>Home</p>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li className="links">
-                        <p>Resume</p>
+                        <NavLink to="/resume">Resume</NavLink>
                     </li>
                     <li className="links">
-                        <p>Projects</p>
+                        <NavLink to="/projects">Projects</NavLink>
                     </li>
                     <li className="links">
-                        <p>Contact</p>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
 
