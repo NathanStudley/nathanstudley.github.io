@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .links{
+        @apply  hover:text-gray-400 hover:cursor-pointer transition-colors duration-300
+    }
+    .pageMargin{
+        @apply my-12 md:my-24 lg:my-36
+    }
+    .text-colored{
+        @apply bg-gradient-to-r from-blue-600 to-red-600 dark:from-red-600 dark:to-yellow-500 bg-clip-text text-transparent
+    }
+    .typed-cursor {
+        opacity: 1;
+        animation: blink .7s infinite;
+    }
+}

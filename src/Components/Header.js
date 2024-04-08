@@ -11,7 +11,7 @@ function Header() {
         <header className="md:flex justify-between justify-items-center">
             <div className="flex items-center justify-between">
                 <div className="flex gap-4 items-center">
-                    <p className="font-medium text-xl bg-gradient-to-r from-blue-600 to-red-600 dark:from-red-600 dark:bg-yellow-500 bg-clip-text text-transparent cursor-pointer">Nathan Studley</p>
+                    <NavLink to="/" className="font-medium text-xl text-colored cursor-pointer">Nathan Studley</NavLink>
                     <a className="links" href="https://www.linkedin.com/in/nathan-studley/" target="_blank" rel="noopener noreferrer">
                         <svg
                             width="30"
@@ -51,16 +51,16 @@ function Header() {
             <nav id="navmenu" className={` ${isOpen ? "hidden" : null} md:flex`}>
                 <ul className="md:flex gap-4 font-medium text-xl text-right">
                     <li className="links">
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
                     </li>
                     <li className="links">
-                        <NavLink to="/resume">Resume</NavLink>
+                        <NavLink to="/resume" onClick={toggleMenu}>Resume</NavLink>
                     </li>
                     <li className="links">
-                        <NavLink to="/projects">Projects</NavLink>
+                        <NavLink to="/projects" onClick={toggleMenu}>Projects</NavLink>
                     </li>
                     <li className="links">
-                        <NavLink to="/contact">Contact</NavLink>
+                        <NavLink to="/contact" onClick={toggleMenu}>Contact</NavLink>
                     </li>
                 </ul>
 
