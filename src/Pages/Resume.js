@@ -1,7 +1,8 @@
 
 function Resume() {
     return (
-        <div>
+        <div className="pageMargin">
+            <span>Technical Skills</span>
         </div>
     );
 }
