@@ -7,42 +7,42 @@ import { ReactTyped, Typed } from "react-typed";
 function Home() { 
 
     
-    useEffect(() => {
-        const tl = gsap.timeline();
-        tl.from("#line1", {
-            y: "200%",
-            opacity: 0,
-            duration: 1.5,
-        }, "1")
-        .from("#line2", {
-            opacity: 0,
-            duration: 1.5,
-        }, ">")
-        .from("#line3", {
-            opacity: 0,
-            duration: 1.5,
-        }, "<0.5")
-        .from("#line4", {
-            y: "125%",
-            opacity: 0,
-            duration: 2,
-        }, ">")
-        .from("#line5", {
-            x: "-100%",
-            opacity: 0,
-            duration: 3,
-        }, ">1")
-        .from("#line6", {
-            x: "-100%",
-            opacity: 0,
-            duration: 3,
-        }, "<0.5");
-    }, []);
+    // useEffect(() => {
+    //     const tl = gsap.timeline();
+    //     tl.from("#line1", {
+    //         y: "200%",
+    //         opacity: 0,
+    //         duration: 1.5,
+    //     }, "1")
+    //     .from("#line2", {
+    //         opacity: 0,
+    //         duration: 1.5,
+    //     }, ">")
+    //     .from("#line3", {
+    //         opacity: 0,
+    //         duration: 1.5,
+    //     }, "<0.5")
+    //     .from("#line4", {
+    //         y: "125%",
+    //         opacity: 0,
+    //         duration: 2,
+    //     }, ">")
+    //     .from("#line5", {
+    //         x: "-100%",
+    //         opacity: 0,
+    //         duration: 3,
+    //     }, ">1")
+    //     .from("#line6", {
+    //         x: "-100%",
+    //         opacity: 0,
+    //         duration: 3,
+    //     }, "<0.5");
+    // }, []);
 
 
     return (
       <div className="pageMargin">
-        <div className="space-y-1">
+        <div className="space-y-1 h-44">
           <h1 id="line1" className="text-4xl md:text-5xl font-bold">
             Hi,
           </h1>
@@ -50,16 +50,28 @@ function Home() {
             <h1 id="line2" className="text-4xl md:text-5xl font-bold">
               I'm&nbsp;
             </h1>
-            <h1
-              id="line3"
-              className="text-4xl md:text-5xl font-bold text-colored"
-            >
-              Nate
+            <h1 id="line3" className="text-4xl md:text-5xl font-bold">
+              <text-colored>Nate</text-colored>
             </h1>
           </div>
           <h1 id="line4" className="text-4xl md:text-5xl font-bold relative">
-            I build things with <ReactTyped className="text-colored" strings={["code"]} startDelay={400} backDelay={2000} typeSpeed={100} showCursor={true} backSpeed={50} loop={true} />
-            <span className="typed-cursor -left-3 relative text-colored">|</span>
+            I{" "}
+            <ReactTyped
+              className=""
+              strings={[
+                "write <text-colored>code</text-colored>",
+                "develop <text-colored>web</text-colored> <text-colored>applications</text-colored>",
+                "engineer <text-colored>cloud</text-colored> solutions",
+              ]}
+              startDelay={400}
+              backDelay={2000}
+              typeSpeed={50}
+              showCursor={false}
+              backSpeed={50}
+              smartBackspace={true}
+              loop={true}
+            />
+            <span className="typed-cursor relative">|</span>
             <style>{`
             @keyframes blink {
               0% { opacity: 1; }

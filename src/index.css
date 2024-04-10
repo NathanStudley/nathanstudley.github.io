@@ -16,4 +16,7 @@
         opacity: 1;
         animation: blink .7s infinite;
     }
+    text-colored {
+        @apply bg-gradient-to-r from-blue-600 to-purple-600 dark:from-red-600 dark:to-yellow-500 bg-clip-text text-transparent
+    }
 }
