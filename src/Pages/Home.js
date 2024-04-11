@@ -7,37 +7,37 @@ import { ReactTyped, Typed } from "react-typed";
 function Home() { 
 
     
-    // useEffect(() => {
-    //     const tl = gsap.timeline();
-    //     tl.from("#line1", {
-    //         y: "200%",
-    //         opacity: 0,
-    //         duration: 1.5,
-    //     }, "1")
-    //     .from("#line2", {
-    //         opacity: 0,
-    //         duration: 1.5,
-    //     }, ">")
-    //     .from("#line3", {
-    //         opacity: 0,
-    //         duration: 1.5,
-    //     }, "<0.5")
-    //     .from("#line4", {
-    //         y: "125%",
-    //         opacity: 0,
-    //         duration: 2,
-    //     }, ">")
-    //     .from("#line5", {
-    //         x: "-100%",
-    //         opacity: 0,
-    //         duration: 3,
-    //     }, ">1")
-    //     .from("#line6", {
-    //         x: "-100%",
-    //         opacity: 0,
-    //         duration: 3,
-    //     }, "<0.5");
-    // }, []);
+    useEffect(() => {
+        const tl = gsap.timeline();
+        tl.from("#line1", {
+            y: "200%",
+            opacity: 0,
+            duration: 1.5,
+        }, "1")
+        .from("#line2", {
+            opacity: 0,
+            duration: 1.5,
+        }, ">")
+        .from("#line3", {
+            opacity: 0,
+            duration: 1.5,
+        }, "<0.5")
+        .from("#line4", {
+            y: "125%",
+            opacity: 0,
+            duration: 2,
+        }, ">")
+        .from("#line5", {
+            x: "-100%",
+            opacity: 0,
+            duration: 3,
+        }, ">1")
+        .from("#line6", {
+            x: "-100%",
+            opacity: 0,
+            duration: 3,
+        }, "<0.5");
+    }, []);
 
 
     return (
