@@ -10,32 +10,34 @@ function Home() {
     useEffect(() => {
         const tl = gsap.timeline();
         tl.from("#line1", {
-            y: "200%",
+            x: "-100%",
             opacity: 0,
-            duration: 1.5,
+            duration: 1,
         }, "1")
         .from("#line2", {
+            y: "110%",
             opacity: 0,
-            duration: 1.5,
+            duration: 0.5,
         }, ">")
-        .from("#line3", {
+          .from("#line3", {
+            y: "110%",
             opacity: 0,
-            duration: 1.5,
-        }, "<0.5")
+            duration: 0.5,
+        }, "<0.25")
         .from("#line4", {
-            y: "125%",
+            y: "110%",
             opacity: 0,
-            duration: 2,
+            duration: 0.5,
         }, ">")
         .from("#line5", {
             x: "-100%",
             opacity: 0,
-            duration: 3,
+            duration: 1.5,
         }, ">1")
         .from("#line6", {
             x: "-100%",
             opacity: 0,
-            duration: 3,
+            duration: 1.5,
         }, "<0.5");
     }, []);
 
@@ -63,11 +65,12 @@ function Home() {
                 "develop <text-colored>web</text-colored> <text-colored>applications</text-colored>",
                 "engineer <text-colored>cloud</text-colored> solutions",
               ]}
-              startDelay={400}
+              startDelay={500}
               backDelay={2000}
               typeSpeed={50}
               showCursor={false}
               backSpeed={50}
+              startWhenVisible={true}
               smartBackspace={true}
               loop={true}
             />
