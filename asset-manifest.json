@@ -1,13 +1,45 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b1ecf82.css",
-    "main.js": "/static/js/main.97f0ecd2.js",
+    "main.css": "/static/css/main.ee4ff5fd.css",
+    "main.js": "/static/js/main.afb031f7.js",
+    "static/media/LaTeX-Dark.svg": "/static/media/LaTeX-Dark.7b7b6ad56b98ad09e0bde035b7b7d959.svg",
+    "static/media/LaTeX-Light.svg": "/static/media/LaTeX-Light.94d51b6f81f62e15593d3ec93e86446e.svg",
+    "static/media/Postman.svg": "/static/media/Postman.a9100caa05cd29d256490ac2685009c3.svg",
+    "static/media/PostgreSQL-Light.svg": "/static/media/PostgreSQL-Light.4e36b7eb1b6c8884bb87838dfb720ea9.svg",
+    "static/media/AWS-Light.svg": "/static/media/AWS-Light.5884438f691cc18cce48b06b820acff0.svg",
+    "static/media/AWS-Dark.svg": "/static/media/AWS-Dark.0b1b9ae542cebfa669f37c0d81c99d2e.svg",
+    "static/media/PostgreSQL-Dark.svg": "/static/media/PostgreSQL-Dark.e17a116e07802b3b53c5b4c118b1e681.svg",
+    "static/media/NodeJS-Light.svg": "/static/media/NodeJS-Light.aea93409f1111d62a1eaa3347b033dda.svg",
+    "static/media/NodeJS-Dark.svg": "/static/media/NodeJS-Dark.d01eb487bc154d914fbee19be73a6ef0.svg",
+    "static/media/Github-Light.svg": "/static/media/Github-Light.7f8df044b637c67b8b8302fd8aaefe32.svg",
+    "static/media/Github-Dark.svg": "/static/media/Github-Dark.ac545114b938c2cab646130d25acb0fd.svg",
+    "static/media/Git.svg": "/static/media/Git.87d6e2a3383a582dd8d951daf9c95c04.svg",
+    "static/media/Matlab-Dark.svg": "/static/media/Matlab-Dark.3dde193ab61744b085da4dd74c6b4fb8.svg",
+    "static/media/Matlab-Light.svg": "/static/media/Matlab-Light.ecc07554e241caa0b36da890898c19f1.svg",
+    "static/media/React-Dark.svg": "/static/media/React-Dark.45e05858175d1edbb57051533007343c.svg",
+    "static/media/React-Light.svg": "/static/media/React-Light.859310e341351502b4a2a19a19f7ad32.svg",
+    "static/media/Python-Dark.svg": "/static/media/Python-Dark.bf36a7c430d4004862f45f6478928de7.svg",
+    "static/media/Python-Light.svg": "/static/media/Python-Light.2b3e1cac446d5c43d147be232d2108af.svg",
+    "static/media/Npm-Dark.svg": "/static/media/Npm-Dark.4d3b2780dd1dae432206425f42ffaf4d.svg",
+    "static/media/Npm-Light.svg": "/static/media/Npm-Light.f9b1420b620825baec6975281f2026e4.svg",
+    "static/media/VSCode-Dark.svg": "/static/media/VSCode-Dark.832fcc7f88399f79848f458bf495a30d.svg",
+    "static/media/VSCode-Light.svg": "/static/media/VSCode-Light.8a2318f0de04be62a3f172815fe90134.svg",
+    "static/media/JavaScript.svg": "/static/media/JavaScript.9a071f2801f9f92598764d48c7225305.svg",
+    "static/media/MongoDB.svg": "/static/media/MongoDB.d4ec4d452a7f201ba12bd75b4657a816.svg",
+    "static/media/CS.svg": "/static/media/CS.84b775c1cb9fc3e31ea39c46c8d66362.svg",
+    "static/media/TailwindCSS-Dark.svg": "/static/media/TailwindCSS-Dark.64f865ec00b139cb9ae7b35692bd0ec7.svg",
+    "static/media/TailwindCSS-Light.svg": "/static/media/TailwindCSS-Light.5d31717fbdc3bb6b5a9bdc3f5ba7f5c0.svg",
+    "static/media/CPP.svg": "/static/media/CPP.0170491bcee6df72d47e4c10e0fa8b90.svg",
+    "static/media/Solidity.svg": "/static/media/Solidity.66be769accc575af72a67664cf221a93.svg",
+    "static/media/C.svg": "/static/media/C.c626ccb6c2805626752f95c9989dbbb5.svg",
+    "static/media/CSS.svg": "/static/media/CSS.5fcd7f5683afc0fc6d0186a083262016.svg",
+    "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "index.html": "/index.html",
-    "main.1b1ecf82.css.map": "/static/css/main.1b1ecf82.css.map",
-    "main.97f0ecd2.js.map": "/static/js/main.97f0ecd2.js.map"
+    "main.ee4ff5fd.css.map": "/static/css/main.ee4ff5fd.css.map",
+    "main.afb031f7.js.map": "/static/js/main.afb031f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b1ecf82.css",
-    "static/js/main.97f0ecd2.js"
+    "static/css/main.ee4ff5fd.css",
+    "static/js/main.afb031f7.js"
   ]
 }
