@@ -19,4 +19,7 @@
     text-colored {
         @apply bg-gradient-to-r from-blue-600 to-purple-600 dark:from-red-600 dark:to-yellow-500 bg-clip-text text-transparent
     }
+    .iconGrid{
+        @apply grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 gap-4 text-center text-sm my-4
+    }
 }
