@@ -10,24 +10,28 @@ function Home() {
     useEffect(() => {
         const tl = gsap.timeline();
         tl.from("#line1", {
-            x: "-100%",
+            x: "-50%",
             opacity: 0,
-            duration: 1,
-        }, "1")
+          duration: 1.5,
+            ease: "power3.easeOut",
+        }, "0.5")
         .from("#line2", {
             y: "110%",
             opacity: 0,
-            duration: 0.5,
+          duration: 0.5,
+            ease: "power3.easeOut",
         }, ">")
           .from("#line3", {
             y: "110%",
             opacity: 0,
             duration: 0.5,
+            ease: "power3.easeOut",
         }, "<0.25")
         .from("#line4", {
             y: "110%",
             opacity: 0,
-            duration: 0.5,
+          duration: 0.5,
+            ease: "power3.easeOut",
         }, ">")
         .from("#line5", {
             x: "-100%",
