@@ -22,4 +22,10 @@
     .iconGrid{
         @apply grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 xl:grid-cols-10 gap-4 text-center text-sm my-4
     }
+    .resumeSection{
+        @apply flex flex-col text-center sm:text-start text-2xl sm:text-3xl font-semibold
+    }
+    .experience{
+        
+    }
 }
