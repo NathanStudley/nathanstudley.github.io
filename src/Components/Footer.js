@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="mt-auto">
+        <footer className="py-4">
             <p className="text-center text-sm">
                Copyright © Nathan Studley
             </p>

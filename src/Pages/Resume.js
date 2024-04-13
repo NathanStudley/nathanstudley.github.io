@@ -7,7 +7,7 @@ function Resume() {
     const { aws, git, github, mongodb, nodejs, npm, postgresql, postman, vscode } = toolIcons;
     const toolIconArray = [aws, git, github, mongodb, nodejs, npm, postgresql, postman, vscode];
     return (
-      <div className="pageMargin">
+      <main className="pageMargin">
         <div className="flex flex-col text-center sm:text-start text-2xl sm:text-3xl font-semibold">
           <span className="text-3xl sm:text-4xl mb-4">Technical Skills</span>
           <span className="text-gray-600 dark:text-gray-400">Programming</span>
@@ -41,7 +41,10 @@ function Resume() {
                     )}
                 </div>
         </div>
-      </div>
+        <div>
+          
+        </div>
+      </main>
     );
 }
 

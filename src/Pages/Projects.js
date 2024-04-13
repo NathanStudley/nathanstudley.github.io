@@ -1,8 +1,9 @@
 
 function Projects() {
     return (
-        <div>
-        </div>
+        <main className="pageMargin">
+            
+        </main>
     );
 }    
 

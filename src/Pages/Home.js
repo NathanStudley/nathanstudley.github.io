@@ -43,7 +43,7 @@ function Home() {
 
 
     return (
-      <div className="pageMargin">
+      <main className="pageMargin">
         <div className="space-y-1 h-44">
           <h1 id="line1" className="text-4xl md:text-5xl font-bold">
             Hi,
@@ -65,12 +65,11 @@ function Home() {
                 "develop <text-colored>web</text-colored> <text-colored>applications</text-colored>",
                 "engineer <text-colored>cloud</text-colored> solutions",
               ]}
-              startDelay={500}
+              startDelay={2000}
               backDelay={2000}
               typeSpeed={50}
               showCursor={false}
               backSpeed={50}
-              startWhenVisible={true}
               smartBackspace={true}
               loop={true}
             />
@@ -95,7 +94,7 @@ function Home() {
             Get in touch &#10095;
           </NavLink>
         </div>
-      </div>
+      </main>
     );
 }
 
