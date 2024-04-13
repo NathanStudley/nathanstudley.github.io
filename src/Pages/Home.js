@@ -16,21 +16,21 @@ function Home() {
             ease: "power3.easeOut",
         }, "0.5")
         .from("#line2", {
-            y: "110%",
+            y: "25%",
             opacity: 0,
-          duration: 0.5,
+          duration: 1,
             ease: "power3.easeOut",
         }, ">")
           .from("#line3", {
-            y: "110%",
+            y: "25%",
             opacity: 0,
-            duration: 0.5,
+            duration: 1,
             ease: "power3.easeOut",
         }, "<0.25")
         .from("#line4", {
-            y: "110%",
+            y: "25%",
             opacity: 0,
-          duration: 0.5,
+          duration: 1,
             ease: "power3.easeOut",
         }, ">")
         .from("#line5", {
@@ -48,7 +48,7 @@ function Home() {
 
     return (
       <main className="pageMargin">
-        <div className="space-y-1 h-44">
+        <div className="space-y-1 h-56">
           <h1 id="line1" className="text-4xl md:text-5xl font-bold">
             Hi,
           </h1>
