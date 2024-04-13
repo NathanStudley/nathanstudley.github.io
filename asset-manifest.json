@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4f1da436.css",
-    "main.js": "/static/js/main.ccaa063b.js",
+    "main.js": "/static/js/main.e8d186a5.js",
     "static/media/LaTeX-Dark.svg": "/static/media/LaTeX-Dark.7b7b6ad56b98ad09e0bde035b7b7d959.svg",
     "static/media/LaTeX-Light.svg": "/static/media/LaTeX-Light.94d51b6f81f62e15593d3ec93e86446e.svg",
     "static/media/Postman.svg": "/static/media/Postman.a9100caa05cd29d256490ac2685009c3.svg",
@@ -36,10 +36,10 @@
     "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "index.html": "/index.html",
     "main.4f1da436.css.map": "/static/css/main.4f1da436.css.map",
-    "main.ccaa063b.js.map": "/static/js/main.ccaa063b.js.map"
+    "main.e8d186a5.js.map": "/static/js/main.e8d186a5.js.map"
   },
   "entrypoints": [
     "static/css/main.4f1da436.css",
-    "static/js/main.ccaa063b.js"
+    "static/js/main.e8d186a5.js"
   ]
 }
