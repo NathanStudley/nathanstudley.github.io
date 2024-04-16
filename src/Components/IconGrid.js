@@ -10,9 +10,8 @@ function IconGrid({icons}) {
         <div className="iconGrid">
             {React.Children.toArray(
                 icons.map((icon) => (
-                    <div className=" flex flex-col">
+                    <div className="w-16 lg:w-20 2xl:w-24">
                         <img
-                            className="max-h-32"
                             src={icon.dark}
                             alt={icon.name}
                         ></img>
