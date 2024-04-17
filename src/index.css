@@ -19,13 +19,16 @@
     text-colored {
         @apply bg-gradient-to-r from-blue-600 to-purple-600 dark:from-red-600 dark:to-yellow-500 bg-clip-text text-transparent
     }
-    .iconGrid{
-        @apply flex flex-wrap gap-4 text-center text-sm my-4 max-w-6xl auto-cols-max justify-center sm:justify-start
+    .items-grid{
+        @apply flex flex-wrap gap-4 text-center text-sm my-4 justify-center sm:justify-start
     }
     .resumeSection{
         @apply flex flex-col text-center md:text-start text-2xl md:text-3xl font-semibold
     }
     .text-light{
         @apply text-zinc-600 dark:text-zinc-400 border-zinc-600 dark:border-zinc-400
+    }
+    .project{
+        @apply rounded-xl bg-zinc-200 dark:bg-zinc-800 w-64 text-base overflow-hidden shadow-lg h-fit
     }
 }

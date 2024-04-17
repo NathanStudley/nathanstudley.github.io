@@ -7,7 +7,7 @@ import React from "react";
  */
 function IconGrid({icons}) {
     return (
-        <div className="iconGrid">
+        <div className="items-grid">
             {React.Children.toArray(
                 icons.map((icon) => (
                     <div className="w-16 lg:w-20 2xl:w-24">

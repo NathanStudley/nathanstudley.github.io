@@ -6,7 +6,6 @@ import Resume from "./Pages/Resume";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import resume from "./assets/Nathan_Studley_Resume.pdf";
 
 function App() {
 
