@@ -16,23 +16,15 @@ function Home() {
             ease: "power3.easeOut",
         }, "0.5")
         .from("#line2", {
-            y: "25%",
-            opacity: 0,
-          duration: 1,
-            ease: "power3.easeOut",
-        }, ">")
-          .from("#line3", {
-            y: "25%",
-            opacity: 0,
+            display: "none",
             duration: 1,
             ease: "power3.easeOut",
-        }, "<0.25")
-        .from("#line4", {
-            y: "25%",
-            opacity: 0,
-          duration: 1,
-            ease: "power3.easeOut",
         }, ">")
+        .from("#line4", {
+            display: "none",
+            duration: 1,
+            ease: "power3.easeOut",
+        }, ">1")
         .from("#line5", {
             x: "-100%",
             opacity: 0,
@@ -52,22 +44,16 @@ function Home() {
           <h1 id="line1" className="text-4xl md:text-5xl font-bold">
             Hi,
           </h1>
-          <div className="flex space-x-1">
-            <h1 id="line2" className="text-4xl md:text-5xl font-bold">
-              I'm&nbsp;
-            </h1>
-            <h1 id="line3" className="text-4xl md:text-5xl font-bold">
-              <text-colored>Nate</text-colored>
-            </h1>
+          <div className="flex space-x-1 text-4xl md:text-5xl font-bold">
+            <ReactTyped id="line2" strings={["I'm <text-colored>Nate</text-colored>",]} typeSpeed={50} loop={false} showCursor={false} startWhenVisible={true} />
           </div>
           <h1 id="line4" className="text-4xl md:text-5xl font-bold relative">
-            I{" "}
             <ReactTyped
               className=""
               strings={[
-                "write <text-colored>code</text-colored>",
-                "develop <text-colored>web</text-colored> <text-colored>applications</text-colored>",
-                "engineer <text-colored>cloud</text-colored> solutions",
+                "I write <text-colored>code</text-colored>",
+                "I develop <text-colored>web</text-colored> <text-colored>applications</text-colored>",
+                "I engineer <text-colored>cloud</text-colored> solutions",
               ]}
               startDelay={2000}
               backDelay={2000}
@@ -76,6 +62,7 @@ function Home() {
               backSpeed={50}
               smartBackspace={true}
               loop={true}
+              startWhenVisible={true}
             />
             <span className="typed-cursor relative">|</span>
             <style>{`
