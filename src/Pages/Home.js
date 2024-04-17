@@ -44,9 +44,16 @@ function Home() {
           <h1 id="line1" className="text-4xl md:text-5xl font-bold">
             Hi,
           </h1>
-          <div className="flex space-x-1 text-4xl md:text-5xl font-bold">
-            <ReactTyped id="line2" strings={["I'm <text-colored>Nate</text-colored>",]} typeSpeed={50} loop={false} showCursor={false} startWhenVisible={true} />
-          </div>
+          <h1 id="line2" className="flex space-x-1 text-4xl md:text-5xl font-bold">
+            <ReactTyped
+              id="line2"
+              strings={["I'm <text-colored>Nate</text-colored>"]}
+              typeSpeed={50}
+              loop={false}
+              showCursor={false}
+              startWhenVisible={true}
+            />
+          </h1>
           <h1 id="line4" className="text-4xl md:text-5xl font-bold relative">
             <ReactTyped
               className=""
@@ -55,7 +62,6 @@ function Home() {
                 "I develop <text-colored>web</text-colored> <text-colored>applications</text-colored>",
                 "I engineer <text-colored>cloud</text-colored> solutions",
               ]}
-              startDelay={2000}
               backDelay={2000}
               typeSpeed={50}
               showCursor={false}
