@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b1f83b7b.css",
-    "main.js": "/static/js/main.ffa0a9af.js",
+    "main.js": "/static/js/main.0a3dee0a.js",
     "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.9336812dd9eb9a698536.pdf",
     "static/media/LaTeX-Dark.svg": "/static/media/LaTeX-Dark.7b7b6ad56b98ad09e0bde035b7b7d959.svg",
     "static/media/LaTeX-Light.svg": "/static/media/LaTeX-Light.94d51b6f81f62e15593d3ec93e86446e.svg",
@@ -37,10 +37,10 @@
     "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "index.html": "/index.html",
     "main.b1f83b7b.css.map": "/static/css/main.b1f83b7b.css.map",
-    "main.ffa0a9af.js.map": "/static/js/main.ffa0a9af.js.map"
+    "main.0a3dee0a.js.map": "/static/js/main.0a3dee0a.js.map"
   },
   "entrypoints": [
     "static/css/main.b1f83b7b.css",
-    "static/js/main.ffa0a9af.js"
+    "static/js/main.0a3dee0a.js"
   ]
 }
