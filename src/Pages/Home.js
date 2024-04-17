@@ -50,7 +50,6 @@ function Home() {
               strings={["I'm <text-colored>Nate</text-colored>"]}
               typeSpeed={50}
               loop={false}
-              showCursor={false}
               startWhenVisible={true}
             />
           </h1>

@@ -42,9 +42,9 @@ function Resume() {
         </div>
         <Link
           onClick={openResume}
-          className="underline links text-center"
+          className="underline links text-center pt-8"
         >
-          PDF
+          PDF Version
         </Link>
       </main>
     );
