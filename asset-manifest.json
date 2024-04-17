@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1f83b7b.css",
-    "main.js": "/static/js/main.0a3dee0a.js",
+    "main.css": "/static/css/main.65554110.css",
+    "main.js": "/static/js/main.e95274de.js",
     "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.9336812dd9eb9a698536.pdf",
     "static/media/LaTeX-Dark.svg": "/static/media/LaTeX-Dark.7b7b6ad56b98ad09e0bde035b7b7d959.svg",
     "static/media/LaTeX-Light.svg": "/static/media/LaTeX-Light.94d51b6f81f62e15593d3ec93e86446e.svg",
@@ -36,11 +36,11 @@
     "static/media/CSS.svg": "/static/media/CSS.5fcd7f5683afc0fc6d0186a083262016.svg",
     "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "index.html": "/index.html",
-    "main.b1f83b7b.css.map": "/static/css/main.b1f83b7b.css.map",
-    "main.0a3dee0a.js.map": "/static/js/main.0a3dee0a.js.map"
+    "main.65554110.css.map": "/static/css/main.65554110.css.map",
+    "main.e95274de.js.map": "/static/js/main.e95274de.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1f83b7b.css",
-    "static/js/main.0a3dee0a.js"
+    "static/css/main.65554110.css",
+    "static/js/main.e95274de.js"
   ]
 }
