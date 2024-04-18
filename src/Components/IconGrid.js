@@ -5,7 +5,7 @@ import React from "react";
  * @param {[]} icons 
  * @returns 
  */
-function IconGrid({icons}) {
+function IconGrid({ icons }) {
     return (
         <div className="items-grid">
             {React.Children.toArray(
