@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# My Portfolio
 Built with React and TailwindCSS
 
 The perfect place to learn a little bit more about me and what I'm doing.  
