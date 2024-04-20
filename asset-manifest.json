@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b1b114c.css",
-    "main.js": "/static/js/main.efa4e4a2.js",
+    "main.css": "/static/css/main.3912ace5.css",
+    "main.js": "/static/js/main.fc423a41.js",
     "static/media/monolithconcorp.png": "/static/media/monolithconcorp.5dd79e447fe4de7b9f40.png",
     "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.9336812dd9eb9a698536.pdf",
     "static/media/portfolio.png": "/static/media/portfolio.ac7f207dbb8fc5b7bc07.png",
@@ -39,11 +39,11 @@
     "static/media/CSS.svg": "/static/media/CSS.5fcd7f5683afc0fc6d0186a083262016.svg",
     "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "index.html": "/index.html",
-    "main.2b1b114c.css.map": "/static/css/main.2b1b114c.css.map",
-    "main.efa4e4a2.js.map": "/static/js/main.efa4e4a2.js.map"
+    "main.3912ace5.css.map": "/static/css/main.3912ace5.css.map",
+    "main.fc423a41.js.map": "/static/js/main.fc423a41.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b1b114c.css",
-    "static/js/main.efa4e4a2.js"
+    "static/css/main.3912ace5.css",
+    "static/js/main.fc423a41.js"
   ]
 }
