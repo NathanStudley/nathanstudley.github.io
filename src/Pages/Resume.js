@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { programmingIcons, toolIcons } from "../assets/icons/Icons";
 import IconGrid from "../Components/IconGrid";
-import { experienceDetails, educationDetails } from "../assets/Details";
+import { experienceDetails, educationDetails, certificationDetails } from "../assets/Details";
 import Experience from "../Components/Experience";
 import resume from "../assets/Nathan_Studley_Resume.pdf";
 
@@ -40,10 +40,23 @@ function Resume() {
             educationDetails.map((education) => <Experience {...education} />)
           )}
         </div>
-        <Link
-          onClick={openResume}
-          className="underline links text-center pt-8"
-        >
+        <div className="resumeSection">
+          <span className="text-3xl md:text-4xl mb-4">Certifications</span>
+          {React.Children.toArray(
+            certificationDetails.map((certification) => (
+              <div className="text-light py-4 border-b-2">
+                <div className="text-lg sm:text-xl md:text-2xl font-bold pb-2 text-start">
+                  <span>{certification.name}</span>
+                </div>
+                <div className="grid grid-flow-col text-sm sm:text-base md:text-lg font-normal">
+                    <span>{certification.company}</span>
+                    <span className="text-end">{certification.date}</span>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+        <Link onClick={openResume} className="underline links text-center pt-8">
           PDF Version
         </Link>
       </main>

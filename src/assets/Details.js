@@ -23,6 +23,14 @@ export const educationDetails = [
 
 ];
 
+export const certificationDetails = [
+  {
+    company: "AWS",
+    date: "Apr 2024",
+    name: "AWS Certified Cloud Practitioner",
+  }
+]
+
 export const projectDetails = [
   {
     name: "Personal Portfolio",
