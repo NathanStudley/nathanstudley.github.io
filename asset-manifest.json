@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.9736fdce.css",
-    "main.js": "/static/js/main.8859fd70.js",
+    "main.css": "/static/css/main.c869b1fe.css",
+    "main.js": "/static/js/main.cf2dcd6c.js",
     "static/media/monolithconcorp.png": "/static/media/monolithconcorp.5dd79e447fe4de7b9f40.png",
-    "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.4cf1e97a8321c97a6958.pdf",
+    "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.118da3bc4fe2497e5f7b.pdf",
     "static/media/portfolio.png": "/static/media/portfolio.ac7f207dbb8fc5b7bc07.png",
     "static/media/adventure_generator.png": "/static/media/adventure_generator.e94a35cbc42f4704e02f.png",
     "static/media/LaTeX-Dark.svg": "/static/media/LaTeX-Dark.7b7b6ad56b98ad09e0bde035b7b7d959.svg",
@@ -39,11 +39,11 @@
     "static/media/CSS.svg": "/static/media/CSS.5fcd7f5683afc0fc6d0186a083262016.svg",
     "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "index.html": "/index.html",
-    "main.9736fdce.css.map": "/static/css/main.9736fdce.css.map",
-    "main.8859fd70.js.map": "/static/js/main.8859fd70.js.map"
+    "main.c869b1fe.css.map": "/static/css/main.c869b1fe.css.map",
+    "main.cf2dcd6c.js.map": "/static/js/main.cf2dcd6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9736fdce.css",
-    "static/js/main.8859fd70.js"
+    "static/css/main.c869b1fe.css",
+    "static/js/main.cf2dcd6c.js"
   ]
 }
