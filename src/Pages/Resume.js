@@ -49,7 +49,7 @@ function Resume() {
                   <span>{certification.name}</span>
                 </div>
                 <div className="grid grid-flow-col text-sm sm:text-base md:text-lg font-normal">
-                    <span>{certification.company}</span>
+                    <span className="text-start">{certification.company}</span>
                     <span className="text-end">{certification.date}</span>
                 </div>
               </div>

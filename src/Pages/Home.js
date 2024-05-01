@@ -90,7 +90,7 @@ function Home() {
             strings={[
               "I write <text-colored>code</text-colored>",
               "I develop <text-colored>web</text-colored> <text-colored>applications</text-colored>",
-              "I engineer <text-colored>cloud</text-colored> solutions",
+              "I engineer <text-colored>cloud solutions</text-colored>",
             ]}
             backDelay={1500}
             typeSpeed={50}
