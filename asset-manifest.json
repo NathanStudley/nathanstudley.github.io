@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.c869b1fe.css",
-    "main.js": "/static/js/main.cf2dcd6c.js",
+    "main.js": "/static/js/main.4f978a06.js",
     "static/media/monolithconcorp.png": "/static/media/monolithconcorp.5dd79e447fe4de7b9f40.png",
-    "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.118da3bc4fe2497e5f7b.pdf",
+    "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.eaec5c60c18fe0cc027d.pdf",
     "static/media/portfolio.png": "/static/media/portfolio.ac7f207dbb8fc5b7bc07.png",
     "static/media/adventure_generator.png": "/static/media/adventure_generator.e94a35cbc42f4704e02f.png",
     "static/media/LaTeX-Dark.svg": "/static/media/LaTeX-Dark.7b7b6ad56b98ad09e0bde035b7b7d959.svg",
@@ -40,10 +40,10 @@
     "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
     "index.html": "/index.html",
     "main.c869b1fe.css.map": "/static/css/main.c869b1fe.css.map",
-    "main.cf2dcd6c.js.map": "/static/js/main.cf2dcd6c.js.map"
+    "main.4f978a06.js.map": "/static/js/main.4f978a06.js.map"
   },
   "entrypoints": [
     "static/css/main.c869b1fe.css",
-    "static/js/main.cf2dcd6c.js"
+    "static/js/main.4f978a06.js"
   ]
 }
