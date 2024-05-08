@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c869b1fe.css",
-    "main.js": "/static/js/main.4f978a06.js",
+    "main.js": "/static/js/main.d14207b9.js",
     "static/media/monolithconcorp.png": "/static/media/monolithconcorp.5dd79e447fe4de7b9f40.png",
     "static/media/Nathan_Studley_Resume.pdf": "/static/media/Nathan_Studley_Resume.eaec5c60c18fe0cc027d.pdf",
     "static/media/portfolio.png": "/static/media/portfolio.ac7f207dbb8fc5b7bc07.png",
@@ -35,15 +35,15 @@
     "static/media/TailwindCSS-Light.svg": "/static/media/TailwindCSS-Light.5d31717fbdc3bb6b5a9bdc3f5ba7f5c0.svg",
     "static/media/CPP.svg": "/static/media/CPP.0170491bcee6df72d47e4c10e0fa8b90.svg",
     "static/media/Solidity.svg": "/static/media/Solidity.66be769accc575af72a67664cf221a93.svg",
+    "index.html": "/index.html",
     "static/media/C.svg": "/static/media/C.c626ccb6c2805626752f95c9989dbbb5.svg",
     "static/media/CSS.svg": "/static/media/CSS.5fcd7f5683afc0fc6d0186a083262016.svg",
     "static/media/HTML.svg": "/static/media/HTML.ca0db580ffd74f086f2dc2a71dacd660.svg",
-    "index.html": "/index.html",
     "main.c869b1fe.css.map": "/static/css/main.c869b1fe.css.map",
-    "main.4f978a06.js.map": "/static/js/main.4f978a06.js.map"
+    "main.d14207b9.js.map": "/static/js/main.d14207b9.js.map"
   },
   "entrypoints": [
     "static/css/main.c869b1fe.css",
-    "static/js/main.4f978a06.js"
+    "static/js/main.d14207b9.js"
   ]
 }
