@@ -12,7 +12,7 @@ function Resume() {
     window.open(resume);
     }
 
-    const { c, cpp, csharp, css, html, javascript, latex, matlab, python, react, solidity, tailwind } = programmingIcons;
+    const { c, cpp, csharp, css, html, javascript, matlab, python, react, tailwind } = programmingIcons;
     const programmingIconArray = [javascript, react, html, css, tailwind, python, matlab, c, cpp, csharp];
 
     const { aws, git, github, mongodb, nodejs, npm, postgresql, postman, vscode } = toolIcons;

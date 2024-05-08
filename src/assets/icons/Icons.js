@@ -1,4 +1,4 @@
-import React from "react";
+
 //Logos
 import awsDark from "./AWS-Dark.svg"
 import awsLight from "./AWS-Light.svg"
