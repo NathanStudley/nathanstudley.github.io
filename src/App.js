@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import Resume from "./Pages/Resume";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
 
