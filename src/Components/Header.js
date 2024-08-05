@@ -17,7 +17,7 @@ function Header() {
             </NavLink>
             <Link
               className="links"
-              href="https://www.linkedin.com/in/nathan-studley/"
+              to="https://www.linkedin.com/in/nathan-studley/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -34,7 +34,7 @@ function Header() {
             </Link>
             <Link
               className="links"
-              href="https://github.com/NathanStudley"
+              to="https://github.com/NathanStudley"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
