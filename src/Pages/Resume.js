@@ -8,12 +8,11 @@ import resume from "../assets/Nathan_Studley_Resume.pdf";
 
 function Resume() {
   function openResume() {
-    console.log(1);
     window.open(resume);
-    }
+  }
 
-    const { c, cpp, csharp, css, html, javascript, matlab, python, react, tailwind } = programmingIcons;
-    const programmingIconArray = [javascript, react, html, css, tailwind, python, matlab, c, cpp, csharp];
+    const { c, cpp, csharp, css, html, javascript, matlab, python, react, tailwind, typescript } = programmingIcons;
+    const programmingIconArray = [javascript, typescript, react, html, css, tailwind, python, matlab, c, cpp, csharp];
 
     const { aws, git, github, mongodb, nodejs, npm, postgresql, postman, vscode } = toolIcons;
     const toolIconArray = [aws, git, github, mongodb, nodejs, npm, postgresql, postman, vscode];

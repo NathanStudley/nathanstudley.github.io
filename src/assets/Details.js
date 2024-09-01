@@ -4,11 +4,11 @@ import monolithconcorp from "./images/monolithconcorp.png";
 
 export const experienceDetails = [
     {
-        company: "Monolith Construciton Corp",
+        company: "Contracted for: Monolith Construction Corp., Data Annotation",
         date: "Jan 2024 - Present",
-        position: "Web Developer",
-        location: "Lakeville, MA",
-        description: "Freelance",
+        position: "Freelance Software Developer",
+        location: "Remote",
+        description: "Services: Web Development, AI Training",
     }
 ]
 

@@ -30,6 +30,7 @@ import reactLight from "./React-Light.svg";
 import solidity from "./Solidity.svg";
 import tailwindDark from "./TailwindCSS-Dark.svg";
 import tailwindLight from "./TailwindCSS-Light.svg";
+import typescript from "./TypeScript.svg";
 import vscodeDark from "./VSCode-Dark.svg";
 import vscodeLight from "./VSCode-Light.svg";
   
@@ -47,6 +48,7 @@ export const programmingIcons = {
     react: { name: "React", dark: reactDark, light: reactLight },
     solidity: { name: "Solidity", dark: solidity, light: solidity },
     tailwind: { name: "Tailwind CSS", dark: tailwindDark, light: tailwindLight },
+    typescript: { name: "TypeScript", dark: typescript, light: typescript },
 }
 
 export const toolIcons = {
