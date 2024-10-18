@@ -16,7 +16,7 @@ export const educationDetails = [
     {
         company: "University of Massachusetts Amherst",
         position: "Bachelor of Science in Computer Science",
-        date: "Dec 2023",
+        date: "Jan 2024",
         location: "Amherst, MA",
         description: "GPA: 3.725",
     }
