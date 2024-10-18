@@ -4,7 +4,7 @@ import monolithconcorp from "./images/monolithconcorp.png";
 
 export const experienceDetails = [
     {
-        company: "Contracted for: Monolith Construction Corp., Data Annotation",
+        company: "Contracted by: Monolith Construction Corp., Data Annotation",
         date: "Jan 2024 - Present",
         position: "Freelance Software Developer",
         location: "Remote",
@@ -45,7 +45,7 @@ export const projectDetails = [
     description:
       "A freelance web development project, the site was designed and developed for use by the Monolith Construction Corp.",
     image: monolithconcorp,
-    livelink: "https://main.d3hs03mzk0n84j.amplifyapp.com/",
+    livelink: "https://monolithconcorp.com/",
   },
   {
     name: "Adventure Generator",
