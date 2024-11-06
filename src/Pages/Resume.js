@@ -8,7 +8,7 @@ import resume from "../assets/Nathan_Studley_Resume.pdf";
 
 function Resume() {
   function openResume() {
-    window.open(resume);
+    window.open(resume, '_blank');
   }
 
     const { c, cpp, csharp, css, html, javascript, matlab, python, react, tailwind, typescript } = programmingIcons;
