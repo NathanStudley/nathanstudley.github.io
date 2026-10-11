@@ -16,9 +16,9 @@ const ROTATING = [
 ];
 
 const STATS = [
-  { value: "3,000+", label: "production commits since Jan 2025" },
-  { value: "4", label: "production systems I ship to weekly" },
+  { value: "4", label: "layers I own, from warehouse database to agent" },
   { value: "47", label: "AI-vs-no-AI strategy pairings tested" },
+  { value: "8", label: "LLM strategies forward-testing every trading day" },
   { value: "1", label: "human gate before anything merges" },
 ];
 

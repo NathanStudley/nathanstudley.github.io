@@ -20,9 +20,6 @@ export default function Contact() {
           <a href={`mailto:${profile.email}`} className="h-display block break-all text-2xl text-gradient sm:text-3xl">
             {profile.email}
           </a>
-          <a href={`tel:${profile.phone}`} className="mt-3 block text-lg muted hover:text-violet-600">
-            {profile.phone}
-          </a>
           <div className="mt-8 flex flex-wrap gap-3">
             <a className="btn-ghost" href="https://www.linkedin.com/in/nathan-studley/" target="_blank" rel="noreferrer">
               <LinkedInIcon /> LinkedIn

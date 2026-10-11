@@ -20,7 +20,7 @@ export const caseStudies = [
       "A file-based task board where each task is a markdown file any session can pick up, so dropped sessions lose nothing.",
     ],
     outcome:
-      "This is how most of my 2026 Barrett work ships, including the waving engine: parallel agents, one human gate, nothing merged on an agent's say-so.",
+      "This is how most of my day-job work ships now, including the waving engine: parallel agents, one human gate, nothing merged on an agent's say-so.",
     tags: ["Claude Code", "Subagents", "Git worktrees", "Hooks", "Skills", "MCP"],
     diagram: "AgentWorkflowDiagram",
   },
@@ -58,7 +58,7 @@ export const caseStudies = [
       "A design-record repo holds the why (decisions, handoffs, binding engine rules) so any session, human or agent, starts from the same context.",
       "Built by the multi-agent workflow above, with authorization and write-path work reserved for the strongest model.",
     ],
-    outcome: "In final review. The goal is that customer wave behaviour becomes configuration instead of code, since per-customer config is where most of the team's engineering hours go.",
+    outcome: "In final review. The goal is that each new customer's wave behaviour becomes configuration instead of another code change.",
     tags: ["Claude Code", "TypeScript", "AWS Lambda", "Oracle PL/SQL"],
   },
   {

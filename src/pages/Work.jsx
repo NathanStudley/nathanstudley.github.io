@@ -57,7 +57,7 @@ export default function Work() {
   return (
     <div className="container-page section">
       <SectionHeading eyebrow="Work" title="Case studies">
-        Two AI systems I run, and three production systems from my day job at a third-party logistics company. Client and customer specifics are left out on purpose.
+        Two AI systems I run, and three production systems from my day job at a third-party logistics company. Client specifics and internal numbers are left out on purpose.
       </SectionHeading>
       <nav className="mb-6 flex flex-wrap gap-2" aria-label="Case studies">
         {caseStudies.map((s) => (

@@ -50,7 +50,7 @@ const html = `<!doctype html>
 </style></head><body>
   <h1>${esc(profile.name)}</h1>
   <div class="title">${esc(profile.title)}</div>
-  <div class="contact">${esc(profile.location)} · <a href="mailto:${profile.email}">${esc(profile.email)}</a> · ${esc(profile.phone)} · <a href="https://${profile.site}">${esc(profile.site)}</a> · <a href="https://www.${profile.linkedin}">${esc(profile.linkedin)}</a> · <a href="https://${profile.github}">${esc(profile.github)}</a></div>
+  <div class="contact">${esc(profile.location)} · <a href="mailto:${profile.email}">${esc(profile.email)}</a> · <a href="https://${profile.site}">${esc(profile.site)}</a> · <a href="https://www.${profile.linkedin}">${esc(profile.linkedin)}</a> · <a href="https://${profile.github}">${esc(profile.github)}</a></div>
   <h2>Summary</h2>
   <p class="summary">${esc(profile.summary)}</p>
   <h2>Experience</h2>
