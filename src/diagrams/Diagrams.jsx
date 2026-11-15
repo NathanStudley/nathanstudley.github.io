@@ -5,15 +5,15 @@ export function AgentWorkflowDiagram() {
     <Diagram
       width={1000}
       height={430}
-      title="Multi-agent engineering workflow: a manager session fans work out to implementer agents in isolated worktrees, then verifies before a PR"
-      caption="How I ship with Claude Code: one manager session scopes and verifies; implementer agents each own one deliverable in their own git worktree; nothing reaches a PR until the diff and test output are checked."
+      title="Parallel development workflow: a lead session fans work out to parallel workers in isolated worktrees, then verifies before a PR"
+      caption="How I ship: one lead session scopes and verifies; parallel workers each own one deliverable in their own git worktree; nothing reaches a PR until the diff and test output are checked."
     >
       <Node x={20} y={170} w={120} title="Task" sub="ticket · ask · bug" />
-      <Node x={180} y={160} w={170} h={76} title="Manager session" sub="Opus · scopes, reviews" tone="accent" />
+      <Node x={180} y={160} w={170} h={76} title="Lead session" sub="scopes, reviews" tone="accent" />
       <GroupBox x={400} y={10} w={220} h={375} label="isolated worktrees" />
-      <Node x={420} y={40} w={180} title="Implementer A" sub="one deliverable" />
-      <Node x={420} y={170} w={180} title="Implementer B" sub="one deliverable" />
-      <Node x={420} y={300} w={180} title="Implementer C" sub="mechanical · cheaper model" />
+      <Node x={420} y={40} w={180} title="Worker A" sub="one deliverable" />
+      <Node x={420} y={170} w={180} title="Worker B" sub="one deliverable" />
+      <Node x={420} y={300} w={180} title="Worker C" sub="mechanical sweep" />
       <Node x={660} y={160} w={150} h={76} title="Verify gate" sub="diffs + suites, not prose" tone="warm" />
       <Node x={850} y={160} w={130} h={76} title="Pull request" sub="human review" tone="good" />
 
@@ -36,7 +36,7 @@ export function DriftDetectionDiagram() {
       width={1000}
       height={300}
       title="Nightly schema drift detection: a tracked baseline and a live snapshot are diffed per object type, then aggregated into an alert"
-      caption="Nightly drift detection for a production Oracle WMS: anything changed outside the pipeline shows up in the morning, before it breaks a deploy or a rollback."
+      caption="Nightly drift detection for a production Oracle database: anything changed outside the pipeline shows up in the morning, before it breaks a deploy or a rollback."
     >
       <Node x={20} y={122} w={130} title="Nightly cron" sub="+ manual dispatch" />
       <GroupBox x={180} y={20} w={440} h={260} label="per object type × 9" />
@@ -88,14 +88,14 @@ export function IntegrationDiagram() {
     <Diagram
       width={1000}
       height={330}
-      title="Event-driven integration architecture: partner calls enter through API Gateway and Lambda, flow through SQS with deduplication and retries into the warehouse system, with a dead-letter queue feeding alerts"
+      title="Event-driven integration architecture: partner calls enter through API Gateway and Lambda, flow through SQS with deduplication and retries into the core system, with a dead-letter queue feeding alerts"
       caption="Partner integrations built to fail loudly instead of silently: idempotent queueing, bounded retries, and a dead-letter path that pages a human."
     >
-      <Node x={20} y={137} w={160} title="Partners & carriers" sub="marketplaces · clients" />
+      <Node x={20} y={137} w={160} title="Partner platforms" sub="SaaS · clients" />
       <Node x={220} y={137} w={160} title="API Gateway + λ" sub="validated, typed" />
       <Node x={420} y={137} w={160} title="SQS" sub="dedup IDs · retries" tone="accent" />
       <Node x={620} y={137} w={160} title="Worker λ" sub="TypeScript" />
-      <Node x={820} y={137} w={160} title="Oracle WMS" sub="orders · inventory" tone="accent" />
+      <Node x={820} y={137} w={160} title="Core database" sub="system of record" tone="accent" />
       <Node x={420} y={252} w={160} title="Dead-letter queue" sub="exhausted retries" tone="warm" />
       <Node x={620} y={252} w={160} title="Datadog alert" sub="someone gets paged" tone="warm" />
 

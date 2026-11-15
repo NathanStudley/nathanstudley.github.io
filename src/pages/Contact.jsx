@@ -3,17 +3,17 @@ import { GitHubIcon, LinkedInIcon } from "../components/Icons";
 import { profile } from "../data/profile";
 
 const TOPICS = [
-  "AI solutions engineering and applied-AI roles",
-  "Turning a manual process into an agent with guardrails",
-  "Rolling out Claude Code across an engineering team",
-  "LLM features that need an honest evaluation",
+  "Software engineering roles in automation, integration or applied AI",
+  "Automating a manual operational process, safely",
+  "Bringing modern development tooling to an engineering team",
+  "Features that need an honest evaluation before they ship",
 ];
 
 export default function Contact() {
   return (
     <div className="container-page section">
       <SectionHeading eyebrow="Contact" title="Let's talk.">
-        Email is the fastest way to reach me.
+        Email is the fastest way to reach me. I'm based south of Boston (North Attleboro, MA) and open to remote or hybrid roles.
       </SectionHeading>
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="card p-8">
