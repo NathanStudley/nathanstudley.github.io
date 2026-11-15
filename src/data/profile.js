@@ -2,44 +2,44 @@
 
 export const profile = {
   name: "Nathan Studley",
-  title: "Software Engineer · AI Solutions",
-  location: "Lakeville, MA (remote)",
+  title: "Software Engineer",
+  location: "North Attleboro, MA (remote)",
   email: "nathanstudley@gmail.com",
   site: "nathanstudley.github.io",
   linkedin: "linkedin.com/in/nathan-studley",
   github: "github.com/NathanStudley",
   summary:
-    "Software engineer who puts AI agents to work on production systems: multi-agent Claude Code workflows that ship code under real review gates, agents that investigate real operational data, and LLM features measured against no-AI baselines. My day job is the warehouse database, integrations and robotics behind a third-party logistics company, so what I build with AI has to survive real warehouses and real customers.",
+    "Software engineer who connects systems and automates the work between them: event-driven AWS integrations, alerting and monitoring that catch silent failures, schema-as-code for production databases, and new internal tools. I move fast with modern tooling and hold the work to a hard bar: reviewed diffs, passing tests, and features that beat a simpler baseline before they ship.",
 };
 
 export const experience = [
   {
     role: "Software Engineer",
     org: "Barrett Distribution Centers",
-    orgNote: "Third-party logistics (3PL), warehousing & fulfillment",
+    orgNote: "Logistics & fulfillment",
     dates: "Jan 2025 – Present",
     location: "Remote",
     bullets: [
-      "Grew from full-stack work on the customer portal into a primary engineer on the Oracle warehouse-management database: order waving, cartonization, ship checks, label printing and billing feeds for every client.",
-      "Designed and launched robot picking lanes and put-wall automation that connect autonomous mobile robots to the WMS, through vendor testing and client go-lives.",
-      "Built AWS serverless integrations: moved accounts-payable automation off a legacy iPaaS onto Lambda, Salesforce billing with queued retries and failure alerts, a returns-platform workflow, and client order and inventory APIs.",
-      "Lead AI adoption on the team: built tooling that lets AI agents investigate warehouse data safely, plus shared Claude Code skills for dependency remediation and change control; co-presented at the company's internal AI summit.",
-      "Took on database platform work: a production performance audit, Liquibase source control with nightly drift detection, a DB monitoring and automation service, and an org-wide CVE remediation program.",
-      "Building a configurable order-waving engine and dashboard with a multi-agent Claude Code workflow where a manager session scopes and verifies, implementer agents work in isolated worktrees, and nothing merges without diff and test review.",
+      "Grew from full-stack work on the customer portal into a primary engineer on the company's core Oracle database and the integrations around it.",
+      "Built event-driven AWS serverless integrations: moved accounts-payable automation off a legacy iPaaS onto Lambda, Salesforce billing with queued retries and failure alerts, a returns-platform workflow, and client APIs.",
+      "Own observability and platform work: alerting on silent failure paths, a database monitoring and automation service, a production performance audit, Liquibase source control with nightly drift detection, and an org-wide CVE remediation program.",
+      "Integrated autonomous mobile robots with core systems for automated picking, through vendor testing and client go-lives.",
+      "Lead AI-assisted development on the team: built tooling that lets AI assistants query operational data safely, shared automation for dependency remediation and change control, and co-presented at the company's internal AI summit.",
+      "Building a configurable rules engine and dashboard that turns hard-coded, per-customer logic into configuration.",
     ],
-    stack: ["Claude Code", "Oracle PL/SQL", "TypeScript", "AWS Lambda", "SQS", "Liquibase", "Salesforce", "Datadog"],
+    stack: ["Oracle PL/SQL", "TypeScript", "AWS Lambda", "SQS", "Liquibase", "Salesforce", "Datadog"],
   },
   {
     role: "AI & Automation Engineer",
     org: "Independent Practice",
     orgNote: "Small-business systems and applied-AI research",
     dates: "Jan 2025 – Present",
-    location: "Lakeville, MA",
+    location: "North Attleboro, MA",
     bullets: [
-      "Run monolithconcorp.com and the back office behind it for a commercial contractor, rebuilt with Claude Code through the company's shift to commercial work, plus an AI-assisted weekly payroll workflow.",
+      "Run monolithconcorp.com and the back office behind it for a commercial contractor, rebuilt through the company's shift to commercial work, plus an automated weekly payroll workflow.",
       "Run a paper-trading research lab that tests LLM judgment against no-AI twins on a holdout period, with eight strategies forward-testing on a daily scheduled job.",
     ],
-    stack: ["Claude Code", "Python", "AWS Amplify", "Google Workspace"],
+    stack: ["Python", "React", "AWS Amplify", "Google Workspace"],
   },
   {
     role: "Web Developer",
@@ -82,7 +82,7 @@ export const education = {
 export const certifications = [{ name: "AWS Certified Cloud Practitioner", date: "Apr 2024" }];
 
 export const skills = [
-  { group: "How I work", items: ["Claude Code: multi-agent orchestration, subagents, skills, hooks", "Claude API & Agent SDK", "MCP tool integrations", "Evals against no-AI baselines", "Context engineering (CLAUDE.md, handoffs, design records)"] },
-  { group: "Where it runs", items: ["Oracle & PL/SQL", "AWS (Lambda, SQS, API Gateway, S3, DynamoDB)", "Liquibase", "Salesforce", "Warehouse robotics", "GitHub Actions", "Datadog"] },
+  { group: "How I work", items: ["AI-assisted development in parallel workflows", "LLM APIs & tool integrations", "Evals against simple baselines", "CI/CD & schema-as-code", "Design records & handoffs in git"] },
+  { group: "Where it runs", items: ["AWS (Lambda, SQS, API Gateway, S3, DynamoDB)", "Event-driven architecture", "Datadog alerting & monitoring", "Oracle & PL/SQL", "Liquibase", "Salesforce", "GitHub Actions"] },
   { group: "Languages", items: ["TypeScript", "Python", "SQL"] },
 ];

@@ -3,62 +3,55 @@ import AgentTerminal from "../components/AgentTerminal";
 import CaseStudyCard from "../components/CaseStudyCard";
 import SectionHeading from "../components/SectionHeading";
 import useRotatingText from "../components/useRotatingText";
-import { AgentsIcon, ArrowIcon, BrainIcon, CloudIcon } from "../components/Icons";
-import { AgentWorkflowDiagram } from "../diagrams/Diagrams";
+import { AgentsIcon, ArrowIcon, CloudIcon, DatabaseIcon } from "../components/Icons";
 import { caseStudies } from "../data/work";
 import { skills } from "../data/profile";
 
 const ROTATING = [
-  "a waving engine for a warehouse floor",
-  "an LLM trading lab that's allowed to say no",
-  "integrations that page a human when they break",
-  "guardrails for a team of Claude Code agents",
+  "event pipelines that page a human when they break",
+  "a rules engine that replaces hard-coded logic",
+  "drift checks for a production database",
+  "a research lab that's allowed to say no",
 ];
 
 const STATS = [
-  { value: "4", label: "layers I own, from warehouse database to agent" },
-  { value: "47", label: "AI-vs-no-AI strategy pairings tested" },
-  { value: "8", label: "LLM strategies forward-testing every trading day" },
-  { value: "1", label: "human gate before anything merges" },
+  { value: "4", label: "layers I work across, from the database to the people using it" },
+  { value: "9", label: "schema object types under nightly drift checks" },
+  { value: "47", label: "model-vs-baseline pairings tested in my research lab" },
 ];
 
 const PILLARS = [
   {
-    icon: AgentsIcon,
-    title: "Agentic engineering",
-    body: "Claude Code run as a team: a manager session, implementer subagents in separate worktrees, skills and hooks that encode the house rules, and a verify step before anything reaches review.",
-  },
-  {
-    icon: BrainIcon,
-    title: "LLM features that earn it",
-    body: "An LLM answers narrow, typed questions; code owns the decisions. Every AI feature runs against a no-AI twin, and if the twin wins, the twin ships.",
-  },
-  {
     icon: CloudIcon,
-    title: "The systems AI has to touch",
-    body: "Queues, partner APIs, label printers, a production Oracle WMS. An agent's answer is worth nothing until it lands safely in one of these, so I own them too.",
+    title: "Integration & event architecture",
+    body: "Event-driven integrations between SaaS platforms, partner APIs, robots and core databases: typed payloads, queues with deduplication and bounded retries, and clean handoffs between systems.",
+  },
+  {
+    icon: DatabaseIcon,
+    title: "Observability that catches failures",
+    body: "Alerting, logging and monitoring on the paths that fail silently, plus schema-as-code and drift detection, so a broken integration pages a person instead of quietly losing data.",
+  },
+  {
+    icon: AgentsIcon,
+    title: "Automation, shipped carefully",
+    body: "Turning manual processes into reliable workflows and new tools. I move fast with modern tooling, but nothing merges without a read diff and passing tests.",
   },
 ];
 
 const LAYERS = [
   { name: "People & operations", note: "who the solution is actually for", tone: "from-zinc-200 to-zinc-100 dark:from-ink-700 dark:to-ink-800" },
-  { name: "AI agents & LLM judgment", note: "Claude, MCP tools, typed decisions, evals", tone: "from-violet-200 to-fuchsia-100 dark:from-violet-900/70 dark:to-fuchsia-900/40" },
-  { name: "APIs & integrations", note: "AWS serverless, queues, partner APIs", tone: "from-sky-200 to-sky-100 dark:from-sky-900/60 dark:to-sky-900/30" },
-  { name: "Systems of record", note: "WMS, Oracle, schema pipelines", tone: "from-amber-200 to-amber-100 dark:from-amber-900/60 dark:to-amber-900/30" },
+  { name: "Automation & decision logic", note: "rules engines, scheduled jobs, models where they earn it", tone: "from-violet-200 to-fuchsia-100 dark:from-violet-900/70 dark:to-fuchsia-900/40" },
+  { name: "APIs & integrations", note: "event-driven AWS, queues, partner and SaaS APIs", tone: "from-sky-200 to-sky-100 dark:from-sky-900/60 dark:to-sky-900/30" },
+  { name: "Systems of record", note: "databases, ERP and CRM platforms, schema pipelines", tone: "from-amber-200 to-amber-100 dark:from-amber-900/60 dark:to-amber-900/30" },
 ];
 
 const RULES = [
-  { n: "01", title: "Agents don't merge. Evidence does.", body: "An agent's report is prose. The diff and the test output are the record, and a person reads both before anything ships." },
-  { n: "02", title: "Every AI feature gets a no-AI twin.", body: "If the plain version wins, the plain version ships. In my trading lab the LLM won 8 of 47 head-to-heads, so that's what I report." },
-  { n: "03", title: "The model answers; code decides.", body: "LLMs get narrow, typed questions. Sizing, routing, money and writes to production stay in deterministic code I can test." },
-  { n: "04", title: "Context lives in git, not in a chat.", body: "House rules, handoffs and design decisions are versioned files, so any session, human or agent, starts from the same truth." },
+  { n: "01", title: "Evidence merges. Claims don't.", body: "A summary of a change is prose. The diff and the test output are the record, and both get read before anything ships." },
+  { n: "02", title: "Every clever feature gets a plain twin.", body: "If the simple version wins, the simple version ships. In my research lab the model won 8 of 47 head-to-heads, so that's what I report." },
+  { n: "03", title: "Judgment in, decisions in code.", body: "Models and heuristics answer narrow, typed questions. Routing, money and writes to production stay in deterministic code I can test." },
+  { n: "04", title: "Context lives in git.", body: "Rules, handoffs and design decisions are versioned files, so anyone picking up the work starts from the same truth." },
 ];
 
-const CLAUDE_REASONS = [
-  { title: "It holds a long task together", body: "Multi-hour, multi-repo sessions where Claude keeps the plan, the constraints and the verification straight. That's what makes orchestration possible at all." },
-  { title: "It follows the house rules", body: "A CLAUDE.md, skills and hooks turn my team's standards into behaviour. Claude actually reads and respects them, so the guardrails hold." },
-  { title: "It tells me when I'm wrong", body: "The most valuable thing a pair can do is push back. Claude flags weak options and risky steps instead of agreeing to be agreeable." },
-];
 
 export default function Home() {
   const rotating = useRotatingText(ROTATING);
@@ -71,9 +64,9 @@ export default function Home() {
         <div className="pointer-events-none absolute -bottom-40 left-10 h-80 w-80 rounded-full bg-amber-400/10 blur-3xl" />
         <div className="container-page relative grid items-center gap-12 py-16 sm:py-24 lg:grid-cols-[1.1fr_1fr]">
           <div className="min-w-0 animate-rise">
-            <p className="eyebrow mb-5">Software Engineer · AI Solutions</p>
+            <p className="eyebrow mb-5">Software Engineer</p>
             <h1 className="h-display mb-6 text-[2.5rem] leading-[1.05] sm:text-6xl">
-              I run a team of <span className="text-gradient">AI agents</span> on production systems. Then I check their work.
+              I connect systems and <span className="text-gradient">automate</span> the work between them.
             </h1>
             <p className="mb-2 text-lg muted">I'm Nate. Right now I'm building</p>
             <p className="mb-8 min-h-[2rem] font-mono text-base sm:text-lg text-violet-600 dark:text-violet-300" aria-live="polite">
@@ -96,7 +89,7 @@ export default function Home() {
 
       {/* Stats */}
       <section className="border-y border-zinc-200 dark:border-ink-700">
-        <div className="container-page grid grid-cols-2 gap-6 py-10 md:grid-cols-4">
+        <div className="container-page grid grid-cols-1 gap-6 py-10 sm:grid-cols-3">
           {STATS.map((s) => (
             <div key={s.label}>
               <div className="h-display text-3xl sm:text-4xl text-gradient">{s.value}</div>
@@ -109,8 +102,8 @@ export default function Home() {
       {/* Pillars */}
       <section className="section">
         <div className="container-page">
-          <SectionHeading eyebrow="What I do" title="Engineer by trade. Coding with AI is how I work now.">
-            Most AI projects stall between the demo and the system of record. I work the whole distance, so an agent's output ends up as a shipped order, a merged PR or a decision someone can check.
+          <SectionHeading eyebrow="What I do" title="The work that happens between systems.">
+            Most of what I build sits in the gaps: the integrations, events, alerts and automation that keep data moving, and that tell a person when it stops.
           </SectionHeading>
           <div className="grid gap-5 md:grid-cols-3">
             {PILLARS.map(({ icon: Icon, title, body }) => (
@@ -130,11 +123,11 @@ export default function Home() {
       <section className="section bg-zinc-50 dark:bg-ink-900/50">
         <div className="container-page grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <SectionHeading eyebrow="Where AI fits" title="An AI solution is a full stack, not a prompt.">
-              Agents are only as useful as the APIs they can call and the data they can trust. I build and own all four layers, which is why the AI work lands in production instead of in a slide deck.
+            <SectionHeading eyebrow="Where I work" title="Useful software is a full stack.">
+              Automation is only as good as the APIs it can call and the data it can trust. I work across all four layers, so a good idea ends up in production instead of a slide deck.
             </SectionHeading>
           </div>
-          <div className="space-y-3" role="list" aria-label="Layers of an AI solution">
+          <div className="space-y-3" role="list" aria-label="Layers of a production system">
             {LAYERS.map((l, i) => (
               <div
                 key={l.name}
@@ -153,21 +146,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Workflow */}
-      <section className="section">
-        <div className="container-page">
-          <SectionHeading eyebrow="How I build with AI" title="An orchestrated team of agents, with one human gate.">
-            Not "AI wrote my code." A system: a manager session that scopes and verifies, implementer agents in isolated worktrees, the right model for each job, and nothing merged on an agent's say-so.
-          </SectionHeading>
-          <AgentWorkflowDiagram />
-        </div>
-      </section>
 
       {/* Rules */}
-      <section className="section pt-0">
+      <section className="section">
         <div className="container-page">
-          <SectionHeading eyebrow="House rules" title="How I keep AI work honest.">
-            There's a lot of noise about AI right now. These are the four rules I hold my own work to.
+          <SectionHeading eyebrow="How I work" title="Four rules I hold my work to.">
+            Speed is easy to come by now. These keep it honest.
           </SectionHeading>
           <div className="grid gap-px overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-200 dark:border-ink-600 dark:bg-ink-600 sm:grid-cols-2">
             {RULES.map((r) => (
@@ -185,7 +169,7 @@ export default function Home() {
       <section className="section bg-zinc-50 dark:bg-ink-900/50">
         <div className="container-page">
           <SectionHeading eyebrow="Selected work" title="Real systems, real constraints.">
-            Production work for a third-party logistics company, plus AI research I run on my own time.
+            Production work from my day job, plus research I run on my own time.
           </SectionHeading>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {caseStudies.slice(0, 3).map((s) => (
@@ -200,30 +184,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Built with Claude */}
-      <section className="section">
-        <div className="container-page">
-          <div className="card relative overflow-hidden p-8 sm:p-12">
-            <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-amber-400/20 blur-3xl" />
-            <p className="eyebrow mb-3">Built with Claude</p>
-            <h2 className="h-display mb-4 max-w-3xl text-3xl sm:text-4xl">Claude Code is my daily driver, and the reason one engineer can cover this much ground.</h2>
-            <p className="mb-10 max-w-3xl text-lg muted">
-              I build on Anthropic's Claude (Opus for orchestration and anything that touches production data, smaller models for mechanical work) because it's the one I trust to run real work under real rules. This site was rebuilt with it too.
-            </p>
-            <div className="grid gap-6 md:grid-cols-3">
-              {CLAUDE_REASONS.map((r) => (
-                <div key={r.title}>
-                  <h3 className="h-display mb-2 text-lg">{r.title}</h3>
-                  <p className="text-sm muted">{r.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Toolbox */}
-      <section className="section pt-0">
+      <section className="section">
         <div className="container-page">
           <SectionHeading eyebrow="Toolbox" title="What I reach for." />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -245,9 +208,9 @@ export default function Home() {
       <section className="section pt-0">
         <div className="container-page">
           <div className="rounded-3xl bg-gradient-to-br from-violet-600 via-fuchsia-600 to-amber-500 p-8 text-white sm:p-12">
-            <h2 className="h-display mb-3 text-3xl sm:text-4xl">Got a process that should be an agent?</h2>
+            <h2 className="h-display mb-3 text-3xl sm:text-4xl">Have a process that should run itself?</h2>
             <p className="mb-8 max-w-2xl text-lg text-white/85">
-              I'm always up for talking with teams working out where AI actually pays off, whether that's a role, a project, or comparing notes on agentic workflows.
+              I'm always up for talking with teams that need software to hold up in the real world, whether that's a role, a project, or comparing notes.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link to="/contact" className="btn bg-white text-zinc-900 hover:bg-zinc-100">
